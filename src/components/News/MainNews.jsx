@@ -3,7 +3,7 @@ import { Header } from '../Header/Header'
 import { NewsData } from './NewsFakeData'
 import Footer from '../home/Footer'
 import FooterSearch from '../home/FooterSearch'
-import { Route, Routes, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 
 export default function MainNews() {

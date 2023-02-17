@@ -1,0 +1,33 @@
+@media only screen and (max-width: 1004px) {
+    .profil {
+        width: 100%;
+    }
+
+    .item-profil {
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    .main-profil {
+        border: 1px solid black;
+    }
+
+    .edit {
+        width: 100%;
+        border: 1px solid rgb(255, 0, 0);
+    }
+
+    .middle-edit{
+        width: 100%;
+    }
+    .tem-middle-edit{
+        width: 100%;
+    }
+    .item-profil-edit div{
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width:560px) {}

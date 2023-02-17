@@ -1,6 +1,6 @@
 import "./App.css";
 import Main from "./components/Main";
-
+import { useState } from "react";
 // css
 
 import "./App.css";
@@ -13,6 +13,16 @@ import './components/css/Profil.css'
 import "./components/Profil Pages/Css/BalanceStyle.css"
 import "./components/css/Room.css"
 import "./components/css/Pictures.css"
+
+
+// responsive css 
+import "./ResponsiveCss/HomeRes.css"
+import "./ResponsiveCss/NewsMainRes.css"
+import "./ResponsiveCss/FooterRes.css"
+import "./ResponsiveCss/HeaderRes.css"
+import "./ResponsiveCss/FillterRes.css"
+import "./ResponsiveCss/TeacherAndHomeComments.css"
+import "./ResponsiveCss/ProfilRes.css"
 
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -36,12 +46,20 @@ import Transaksiya from './components/Profil/Transaksiya'
 import MyOtzif from './components/Profil/MyOtzif'
 import Pictures from './components/Profil/Pictures'
 import Edit from './components/Profil/Edit'
+import { Header } from "./components/Header/Header";
+import { MdImportExport } from "react-icons/md";
 
-function App() {
+export function App() {
+
+  const [navshow, setNavShow] = useState(false)
+  const [darkmode, setDarkmode] = useState(false)
+
+
+
   return (
     <BrowserRouter>
       <ScrollTop />
-      <div className="container">
+      <div className="container"  >
         <Routes>
           <Route path="/*" element={<Main />} />
           <Route path="/profile" element={<ProfilPage />} />
@@ -67,7 +85,7 @@ function App() {
 
           {/* Room  */}
           <Route path="/CenterRoom" element={<CenterRoom />} > </Route>
-
+          <Route path="/Header" element={<Header setNavShow={setNavShow} navshow={navshow} setDarkmode={setDarkmode} darkmode={darkmode} />} ></Route>
         </Routes>
       </div>
     </BrowserRouter>

@@ -13,9 +13,6 @@ export default function Students() {
                     </span>
                 </div>
 
-
-
-
                 <div className="our-students-information">
                     <div className="item-scroll">
 

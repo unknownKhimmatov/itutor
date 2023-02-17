@@ -1,7 +1,5 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import Footer from '../Footer'
-import FooterSearch from '../FooterSearch'
 export default function OurServises() {
     return (
         <>
@@ -17,7 +15,10 @@ export default function OurServises() {
                         </span>
                     </div>
 
+
                     <div className="ourservises-main">
+
+
                         <div className="simple-search">
                             <div className="title-search">
                                 <h3>

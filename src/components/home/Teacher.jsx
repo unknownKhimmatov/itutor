@@ -7,7 +7,7 @@ export default function Teacher() {
             <div className="item-teacher">
                 <div className="left-teacher">
                     <div className="title-teacher ">
-                        <h3>
+                        <h3 id='tech-title'>
                             Вы можете общаться со <br /> всеми нашими учителями
                         </h3>
                         <span>
@@ -45,7 +45,6 @@ export default function Teacher() {
                         </div>
                     </div>
 
-
                     <div className="bottom-teacher-information">
                         <div className="top-information-teacher">
                             <img src="./images/teacherimages/tchava (7).png" className='avatopteach' alt="" />
@@ -63,7 +62,28 @@ export default function Teacher() {
                             </div>
                         </div>
                     </div>
+
+
+                    <div className="bottom-teacher-information-res">
+                        <div className="top-information-teacher">
+                            <img src="./images/teacherimages/tchava (7).png" className='avatopteach' alt="" />
+                            <img src="./images/teacherimages/medal.png" className='medal' alt="" />
+                        </div>
+                        <div className="bottom-desc-information">
+                            <h3>
+                                Арсен Клянчив
+                            </h3>
+                            <h5>
+                                Web-дизайн
+                            </h5>
+                            <div className='tchinformationh6'>
+                                <span>Краткое описание скилов преподавателя, тянется из его личных данных, при клике переход на его профиль. Тут выводим преподов случайным образом.</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+
             </div>
         </div>
     )

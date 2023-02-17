@@ -27,7 +27,7 @@ export default function Allsection() {
                 <div className="main-sections-item">
                     <div className="saidbar">
                         <div className="item-saidbar saidbar-ul">
-                            <ul className=''>
+                            <ul>
                                 <li>
                                     ВСЕ ДИСЦИПЛИНЫ
                                 </li>

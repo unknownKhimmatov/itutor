@@ -271,6 +271,15 @@
     gap: 20px;
 }
 
+.item-main-fillter-all-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 .map {
     width: 96%;
     height: 250px;

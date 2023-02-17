@@ -1,0 +1,150 @@
+@media only screen and (max-width: 1004px) {
+    .footersearch {
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .item-footersearch {
+        width: 90%;
+    }
+
+    .item-footersearch .title-footersearch {
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .title-footersearch h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .title-footersearch span {
+        text-align: start;
+        font-size: .7rem;
+        line-height: normal;
+        text-align: center;
+    }
+
+
+    /* footersearch-input */
+    .footersearch-input {
+        width: 100%;
+    }
+
+    .inp-and-icone {
+        width: 100%;
+    }
+
+
+
+    .footer-main {
+        width: 100%;
+        height: 600px;
+        padding: 20px 0px;
+    }
+
+    .footer-main footer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        padding: 20px 0px;
+        align-items: start;
+        gap: 10px;
+        padding: 20px 40px;
+        justify-content: center;
+        grid-template-columns: 32% 32% 32%;
+    }
+
+
+
+    .footer-img {
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        display: flex;
+        margin-top: 70px;
+        align-items: end;
+    }
+
+    .footer-img img {
+        width: 350px;
+    }
+
+
+
+
+
+}
+
+@media only screen and (max-width:560px) {
+    .footersearch {
+        width: 100%;
+    }
+
+    .item-footersearch {
+        width: 95%;
+    }
+
+    .title-footersearch {
+        width: 100%;
+    }
+
+    .title-footersearch h3 {
+        font-size: 1.5rem;
+    }
+
+    .title-footersearch span {
+        font-size: .6rem;
+    }
+
+    .footersearch-input {
+        width: 100%;
+    }
+
+    .footersearch-input .inp-and-icone input {
+        width: 100%;
+        height: 50px;
+        border-radius: 30px;
+    }
+
+    .inp-and-icone input::placeholder {
+        font-size: .6rem;
+    }
+
+    .footersearch-input .inp-and-icone i {
+        width: 20%;
+        height: 50px;
+        font-size: 1.5rem;
+        border-radius: 30px;
+    }
+
+
+    .footer-main {
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+    }
+
+    .footer-main footer {
+        position: relative;
+        width: 100%;
+        display: grid;
+        padding: 20px 0px;
+        align-items: start;
+        gap: 0;
+        padding-left: 20px;
+        justify-content: center;
+        grid-template-columns: 50%;
+    }
+
+    .footer-img {
+        display: none;
+    }
+
+
+
+
+}

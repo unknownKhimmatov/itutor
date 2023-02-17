@@ -120,7 +120,6 @@
 }
 
 body {
-  background: #F9F9F9;
   width: 100%;
   position: relative;
 }
@@ -128,6 +127,7 @@ body {
 .container {
   overflow: hidden;
   width: 100vw;
+  background: #F9F9F9;
   margin: 0 auto;
 }
 
@@ -139,7 +139,20 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
   height: 140px;
+  align-items: center;
+}
+
+.hamurger {
+  font-size: 2.5rem;
+  color: #47406A;
+  position: absolute;
+  cursor: pointer;
+  top: 35%;
+  display: none;
+  bottom: 25%;
+  right: 30px;
 }
 
 header {

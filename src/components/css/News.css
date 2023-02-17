@@ -136,6 +136,8 @@
 .top-onenews-img img {
     width: 200%;
     height: 600px;
+    border-radius: 30px;
+    object-fit: cover;
 }
 
 .bottom-onenews-desc {

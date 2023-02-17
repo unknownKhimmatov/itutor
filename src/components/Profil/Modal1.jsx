@@ -12,12 +12,7 @@ export default function Modal1({ isModal, setIsModal }) {
     }
 
 
-    const OnchangeVAlidation = (i) => {
-        if (i == Number) {
-            const modal = document.getElementById('modal')
-            modal.style.filter = "drop - shadow(0px 16px 34px rgb(0, 119, 36))"
-        }
-    }
+  
 
     return (
         <div className="modal" style={{ display: isModal ? "flex" : "none" }}>
@@ -33,7 +28,7 @@ export default function Modal1({ isModal, setIsModal }) {
                 </div>
                 <div className="input-modal">
                     <label htmlFor="modal">Код</label>
-                    <input type="text" id='modal' onChange={(i) => OnchangeVAlidation(i.target.value)} />
+                    <input type="text" id='modal' />
                 </div>
                 <div className="bottom-modal">
                     <button>Подтвердить</button>

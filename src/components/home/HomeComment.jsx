@@ -4,6 +4,8 @@ export default function Students() {
     return (
         <div className='Students'>
             <div className="item-students">
+
+
                 <div className="students-title title">
                     <h3>
                         Некоторые отзывы <br /> от наших студентов
@@ -12,8 +14,6 @@ export default function Students() {
                         После проведения реального занятия с нашими учителями,<br /> Вы тоже сможете дать им оценку и написать отзыв.
                     </span>
                 </div>
-
-
 
 
                 <div className="our-students-information">

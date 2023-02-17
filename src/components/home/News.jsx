@@ -12,7 +12,7 @@ export default function News() {
         <div className='news'>
             <div className="item-news">
                 <div className="news-title" >
-                    <div className="left-title title">
+                    <div className="left-title ">
                         <h3>
                             Новости сервиса
                         </h3>
@@ -27,8 +27,10 @@ export default function News() {
                     </div>
                 </div>
 
+
                 {/* cards  */}
                 <div className="news-cards" >
+
                     <div className="news-card">
                         <div className="top-news-card">
                             <img src="./images/newsimages/new (2).png" alt="al" />
@@ -72,6 +74,8 @@ export default function News() {
                             </div>
                         </div>
                     </div>
+
+
                 </div>
             </div>
         </div>

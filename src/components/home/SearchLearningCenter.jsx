@@ -31,9 +31,6 @@ export default function SearchLearningCenter() {
                 {/* right-section-search  */}
                 <div className="right-section-search">
                     <div className="item-right-section">
-
-
-
                         <div className="right-model">
                             <div className="user-and-contact">
                                 <i class='bx bxs-user' ></i>
@@ -59,8 +56,6 @@ export default function SearchLearningCenter() {
                                 </div>
                             </div>
                         </div>
-
-
                         <img className='pole' src="./images/homeimages/pole.png" alt="" />
                     </div>
                 </div>
