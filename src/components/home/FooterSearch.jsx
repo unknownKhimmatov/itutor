@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from '../../Context/Context'
 
 export default function FooterSearch() {
+
+    const { dark, setDark } = useContext(Context)
+
     return (
         <div className='footersearch'>
             <div className="item-footersearch">
                 <div className="title-footersearch">
-                    <h3>
+                    <h3 style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                         Подпишитесь на нашу новостную рассылку!
                     </h3>
                     <span>

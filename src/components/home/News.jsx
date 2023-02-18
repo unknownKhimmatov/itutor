@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { Context } from '../../Context/Context'
 export default function News() {
 
     const navigate = useNavigate()
     const ClickMainNews = () => {
         navigate('/NewsMain')
     }
+    const { dark, setDark } = useContext(Context)
 
 
     return (
@@ -13,7 +15,7 @@ export default function News() {
             <div className="item-news">
                 <div className="news-title" >
                     <div className="left-title ">
-                        <h3>
+                        <h3 style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                             Новости сервиса
                         </h3>
                         <span>

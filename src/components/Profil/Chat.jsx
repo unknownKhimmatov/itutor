@@ -31,7 +31,7 @@ export default function Profil() {
                             </NavLink>
 
                             <NavLink to='/Chat' >
-                                <li style={{color:"#000"}} >
+                                <li style={{ color: "#000" }} >
                                     Мои чаты
                                 </li>
                             </NavLink>

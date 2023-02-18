@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Header } from '../Header/Header'
 import { NewsData } from './NewsFakeData'
 import Footer from '../home/Footer'
 import FooterSearch from '../home/FooterSearch'
 import { useNavigate } from 'react-router-dom'
+import { Context } from '../../Context/Context'
 
 
 export default function MainNews() {
@@ -16,13 +17,15 @@ export default function MainNews() {
     }
 
 
+    const { dark, setDark } = useContext(Context)
+
     return (
         <>
             <Header />
             <div className='main-news'>
                 <div className="item-news-main">
                     <div className="title-news-main title">
-                        <h3>
+                        <h3 style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                             Новости
                         </h3>
                     </div>

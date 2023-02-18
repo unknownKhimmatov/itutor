@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
+import { Context } from '../../Context/Context'
 
 export default function Teacher() {
+
+    const { dark, setDark } = useContext(Context)
+
     return (
         <div className='teacher'>
             <div className="item-teacher">
                 <div className="left-teacher">
                     <div className="title-teacher ">
-                        <h3 id='tech-title'>
+                        <h3 id='tech-title' style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                             Вы можете общаться со <br /> всеми нашими учителями
                         </h3>
                         <span>
@@ -16,7 +20,7 @@ export default function Teacher() {
                     </div>
                     <div className="teacher-button">
                         <NavLink to='/MainProfil' >
-                            <button>Зарегистрироваться</button>
+                            <button style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>Зарегистрироваться</button>
                         </NavLink>
                     </div>
                 </div>

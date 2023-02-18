@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from '../../../Context/Context'
 import { Data } from "./Data"
 export default function ItTexnology() {
+
+    const { dark, setDark } = useContext(Context)
+
     return (
         <>
             {
@@ -14,16 +18,16 @@ export default function ItTexnology() {
 
                             <div className="skill-bottom">
                                 <div className="title-bottom-skill">
-                                    <p>
+                                    <p style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                                         {item.title}
                                     </p>
-                                    <h3>
+                                    <h3 style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                                         {item.job}
                                     </h3>
                                     <div className="bottom-information-skill">
-                                        <span><i class='bx bxs-user' ></i> {item.follovers}</span>
-                                        <span> <i class='bx bxs-star star' ></i> {item.rating} </span>
-                                        <span className='pur'> <i class='bx bx-purchase-tag-alt purchase_rotate'></i> от <o>{item.one_lesson}{item.price_type}</o> </span>
+                                        <span style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}><i class='bx bxs-user' style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }} ></i> {item.follovers}</span>
+                                        <span style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}> <i class='bx bxs-star star' ></i> {item.rating} </span>
+                                        <span className='pur'> <i style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }} class='bx bx-purchase-tag-alt purchase_rotate'></i> <span style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>от</span> <o style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>{item.one_lesson}{item.price_type}</o> </span>
                                     </div>
                                 </div>
                             </div>

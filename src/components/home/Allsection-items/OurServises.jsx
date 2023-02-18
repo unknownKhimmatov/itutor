@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
+import { Context } from '../../../Context/Context'
 export default function OurServises() {
+
+    const { dark, setDark } = useContext(Context)
+
     return (
         <>
             <div className='OurServises'>
                 <div className="our-container">
 
                     <div className="ourservises-title">
-                        <h3>
+                        <h3 style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                             Почему обучаться на<br /> нашем сервисе удобнее?
                         </h3>
                         <span>
@@ -74,7 +78,7 @@ export default function OurServises() {
 
                     <div className="bottom-button-ourservises">
                         <NavLink to='/Edit'>
-                            <button>
+                            <button style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                                 Зарегистрироваться
                             </button>
                         </NavLink>

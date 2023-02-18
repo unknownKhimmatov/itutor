@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from '../../Context/Context'
 import { Header } from '../Header/Header'
 import Footer from '../home/Footer'
 import FooterSearch from '../home/FooterSearch'
@@ -7,13 +8,16 @@ import { DataComment } from './DataComment'
 
 
 export default function Comments() {
+
+    const { dark, setDark } = useContext(Context)
+
     return (
         <>
-        <Header/>
+            <Header />
             <div className='comment'>
                 <div className="item-comment">
                     <div className="title-comment title">
-                        <h3>
+                        <h3 style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                             Отзывы
                         </h3>
                     </div>

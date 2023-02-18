@@ -167,9 +167,6 @@
 
 
 
-
-
-
     /* comment */
     .comment {
         width: 100%;
@@ -193,6 +190,20 @@
         width: 100%;
     }
 
+    .desc-comment h3 {
+        font-size: 1.1rem;
+    }
+
+    .desc-comment p {
+        font-size: .9rem;
+    }
+
+
+    .right-comment span {
+        font-size: .6rem;
+    }
+
+
     .main-post textarea {
         width: 100%;
     }
@@ -200,9 +211,6 @@
     .item-teacher-list {
         width: 100%;
     }
-
-
-
 
 
     /* one news  */
