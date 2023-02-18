@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import {
   Route, Routes
 } from 'react-router-dom'
 import App from '../../App'
+import { Context } from '../../Context/Context'
 
 export const Header = () => {
 
@@ -14,40 +15,43 @@ export const Header = () => {
   }
 
   const [darkmode, setDarkmode] = useState(false)
-
-
+  const { dark, setDark } = useContext(Context)
+  const handleChange = () => {
+    setDark(!dark)
+  }
 
   return (
     <>
 
 
-      <div className="header-main">
+      <div className="header-main" style={{ backgroundColor: dark !== true ? "#F9F9F9" : "#593E69" }}>
         <header>
           <nav>
             <div className="brand-logo" id='brand'>
-              <img src="./images/white.png" alt="brand-logo" />
+              <img src="./images/white.png" alt="brand-logo" style={{ display: dark !== true ? "block" : "none" }} />
+              <img src="./images/logo.png" alt="brand-logo" style={{ display: dark !== true ? "none" : "block" }} />
             </div>
             <ul className='navul' id='navul' >
               <li>
-                <NavLink to='/' ><a href="#">На Главную</a></NavLink>
+                <NavLink to='/' ><a style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }} href="#">На Главную</a></NavLink>
               </li>
 
               <li>
-                <NavLink to='/NewsMain' ><a href="#">Новости сервиса</a></NavLink>
+                <NavLink to='/NewsMain' ><a style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }} href="#">Новости сервиса</a></NavLink>
               </li>
 
               <li>
-                <NavLink to="/Comment" ><a href="#">Отзывы</a></NavLink>
+                <NavLink to="/Comment" ><a style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }} href="#">Отзывы</a></NavLink>
               </li>
-              <select className='select-language language'>
+              <select className='select-language language' style={{ backgroundColor: dark !== true ? "#F9F9F9  " : "#593E69", color: dark !== true ? "#593E69" : "#F9F9F9" }} >
                 <option value="">RUS</option>
                 <option value="">UZB</option>
                 <option value="">ENG</option>
               </select>
-              <div className="dark-and-white-mode darkblcok" onClick={() => setDarkmode((prev) => !prev)} style={{ justifyContent: darkmode ? "end" : "start" }} >
+              <div className="dark-and-white-mode darkblcok" onClick={handleChange} style={{ justifyContent: dark !== true ? "start" : "end" }}  >
                 <div className="mode-all" >
-                  <i class='bx bxs-moon dark' style={{ display: darkmode ? "block" : "none" }}></i>
-                  <i class='bx bxs-sun white' style={{ display: darkmode ? "none" : "block" }}  ></i>
+                  <i class='bx bxs-moon dark' style={{ display: dark !== true ? "none" : "block" }}  ></i>
+                  <i class='bx bxs-sun white' style={{ display: dark !== true ? "block" : "none" }}  ></i>
                 </div>
               </div>
             </ul>
@@ -55,20 +59,21 @@ export const Header = () => {
           <div className="massage-and-provite-room-container">
             <div className="massage-container">
               <NavLink to='/Chat'>
-                <img src="./images/message2.png" alt="" />
+                <img src="./images/message2.png" alt="" style={{ display: dark !== true ? "block" : "none" }} />
+                <img src="./images/massage.png" alt="" style={{ display: dark !== true ? "none" : "block" }} />
               </NavLink>
               <span>1</span>
             </div>
-            <div className="provite-room-container">
+            <div className="provite-room-container" style={{ backgroundColor: dark !== true ? "#F8EED9" : "#776083" }}>
               <NavLink to='/profile'>
-                <span >
+                <span style={{ color: dark !== true ? "gold" : "white" }} >
                   Личный кабинет
                 </span>
               </NavLink>
             </div>
           </div>
         </header>
-        <i class="fa-solid fa-bars hamurger" onClick={() => setNavShow((prev) => !prev)} ></i>
+        <i class="fa-solid fa-bars hamurger" onClick={() => setNavShow((prev) => !prev)} style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}  ></i>
       </div>
 
       <div className="reaponsive-header" id='block' style={{ display: navshow ? "flex" : "none", }}>
@@ -90,15 +95,15 @@ export const Header = () => {
               <li>
                 <NavLink to="/Comment" ><a href="#">Отзывы</a></NavLink>
               </li>
-              <select className='select-language-res language'>
+              <select className='select-language-res language' style={{ backgroundColor: dark !== true ? " inhornet " : "inhornet", color: dark !== true ? "#fff" : "#F9F9F9" }} >
                 <option value="" id='opt' >RUS</option>
                 <option value="">UZB</option>
                 <option value="">ENG</option>
               </select>
-              <div className="dark-and-white-mode-res" onClick={() => setDarkmode((prev) => !prev)} style={{ justifyContent: darkmode ? "end" : "start" }}>
+              <div className="dark-and-white-mode-res" onClick={handleChange} style={{ justifyContent: dark !== true ? "start" : "end" }}  >
                 <div className="mode-all" >
-                  <i class='bx bxs-moon dark' style={{ display: darkmode ? "none" : "block" }} ></i>
-                  <i class='bx bxs-sun white' style={{ display: darkmode ? "block" : "none" }} ></i>
+                  <i class='bx bxs-moon dark' style={{ display: dark !== true ? "none" : "block" }} ></i>
+                  <i class='bx bxs-sun white' style={{ display: dark !== true ? "block" : "none" }} ></i>
                 </div>
               </div>
             </ul>
@@ -120,9 +125,7 @@ export const Header = () => {
           </nav>
         </header>
       </div>
-      <Routes>
-        <Route to='/body' element={<App setDarkmode={setDarkmode} darkmode={darkmode} />} ></Route>
-      </Routes>
+
     </>
   )
 }

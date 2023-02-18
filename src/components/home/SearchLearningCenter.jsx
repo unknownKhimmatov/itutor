@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from '../../Context/Context'
 
 export default function SearchLearningCenter() {
+
+    const {dark, setDark} = useContext(Context)
+
     return (
         <div className='search-learnign-center'>
             <div className="search-item">
@@ -8,8 +12,8 @@ export default function SearchLearningCenter() {
                 {/* leaft-section-search  */}
                 <div className="left-section-search">
                     <div className="title-search-section">
-                        <div className="title-all title">
-                            <h3>
+                        <div className="title-all title" >
+                            <h3 style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }} >
                                 Поиск репетиторов,<br /> учителей и учебных центров
                             </h3>
                             <span className='subtitle-search-section'>
@@ -20,8 +24,8 @@ export default function SearchLearningCenter() {
                             <input type="text" placeholder='Введите название предмета или ключевое слово' />
                             <i class='bx bx-search'></i>
                         </div>
-                        <div className="in-zoom-learning">
-                            <span>Система проведения онлайн обучения</span> <img src="./images/homeimages/zoom.png" alt="" />
+                        <div className="in-zoom-learning" >
+                            <span style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }} >Система проведения онлайн обучения</span> <img src="./images/homeimages/zoom.png" alt="" />
                         </div>
                     </div>
                 </div>

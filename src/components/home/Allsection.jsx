@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Fillter from './FillterLearingCenter'
 import { useNavigate } from 'react-router-dom'
 import ItTexnology from './Allsection-items/DISCIPLINES'
+import { Context } from '../../Context/Context'
 
 export default function Allsection() {
 
+
+    const { dark, setDark } = useContext(Context)
 
     const navigate = useNavigate()
 
@@ -16,7 +19,7 @@ export default function Allsection() {
         <>
             <div className='allsections-main'>
                 <div className="title-all-sections title">
-                    <h3>
+                    <h3 style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                         Выбирайте предмет и одного из наших экспертов
                     </h3>
                     <span>
@@ -28,35 +31,35 @@ export default function Allsection() {
                     <div className="saidbar">
                         <div className="item-saidbar saidbar-ul">
                             <ul>
-                                <li>
+                                <li style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                                     ВСЕ ДИСЦИПЛИНЫ
                                 </li>
-                                <li>
+                                <li style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                                     IT-ТЕХНОЛОГИИ
                                 </li>
-                                <li>
+                                <li style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                                     МАТЕМАТИКА
                                 </li>
-                                <li>
+                                <li style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                                     ЯЗЫКИ
                                 </li>
-                                <li>
+                                <li style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                                     ЛИТЕРАТУРА
                                 </li>
-                                <li>
+                                <li style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                                     3D-ДИЗАЙН
                                 </li>
-                                <li>
+                                <li style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                                     ВИДЕО-СЪЕМКА
                                 </li>
-                                <li>
+                                <li style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                                     КУЛИНАРИЯ
                                 </li>
-                                <li>
+                                <li style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                                     КУЗОВНЫЕ РАБОТЫ
                                 </li>
                             </ul>
-                            <span className='slider' onClick={FillterClick} ><i class='bx bx-slider-alt'></i> <p>Расширенный поиск</p></span>
+                            <span className='slider' onClick={FillterClick} ><i style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }} class='bx bx-slider-alt'></i> <p style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>Расширенный поиск</p></span>
                         </div>
                     </div>
                     <div className="all-sections">

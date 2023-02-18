@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from '../../Context/Context'
 
 export default function Students() {
+
+    const { dark, setDark } = useContext(Context)
     return (
         <div className='Students'>
             <div className="item-students">
 
 
                 <div className="students-title title">
-                    <h3>
+                    <h3 style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                         Некоторые отзывы <br /> от наших студентов
                     </h3>
                     <span>

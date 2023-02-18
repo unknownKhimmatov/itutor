@@ -1,6 +1,6 @@
 import "./App.css";
 import Main from "./components/Main";
-import { useState } from "react";
+import { useContext } from "react";
 // css
 
 import "./App.css";
@@ -47,19 +47,19 @@ import MyOtzif from './components/Profil/MyOtzif'
 import Pictures from './components/Profil/Pictures'
 import Edit from './components/Profil/Edit'
 import { Header } from "./components/Header/Header";
-import { MdImportExport } from "react-icons/md";
+import { Context } from "./Context/Context";
 
 export function App() {
 
-  const [navshow, setNavShow] = useState(false)
-  const [darkmode, setDarkmode] = useState(false)
+
+  const { dark, setDark } = useContext(Context)
 
 
 
   return (
     <BrowserRouter>
       <ScrollTop />
-      <div className="container"  >
+      <div className="container" style={{ background: dark !== true ? "#F9F9F9" : "#593E69" }} >
         <Routes>
           <Route path="/*" element={<Main />} />
           <Route path="/profile" element={<ProfilPage />} />
@@ -85,7 +85,7 @@ export function App() {
 
           {/* Room  */}
           <Route path="/CenterRoom" element={<CenterRoom />} > </Route>
-          <Route path="/Header" element={<Header setNavShow={setNavShow} navshow={navshow} setDarkmode={setDarkmode} darkmode={darkmode} />} ></Route>
+          <Route path="/Header" element={<Header />} ></Route>
         </Routes>
       </div>
     </BrowserRouter>
