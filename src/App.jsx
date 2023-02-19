@@ -12,6 +12,7 @@ import "./components/css/Comment.css"
 import './components/css/Profil.css'
 import "./components/Profil Pages/Css/BalanceStyle.css"
 import "./components/css/Room.css"
+import "./components/css/LearingCenterRegister.css"
 import "./components/css/Pictures.css"
 
 
@@ -23,7 +24,7 @@ import "./ResponsiveCss/HeaderRes.css"
 import "./ResponsiveCss/FillterRes.css"
 import "./ResponsiveCss/TeacherAndHomeComments.css"
 import "./ResponsiveCss/ProfilRes.css"
-
+import "./ResponsiveCss/CenterRes.css"
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ProfilPage } from "./components/Profil Pages/Profil/ProfilPage";
@@ -47,7 +48,12 @@ import MyOtzif from './components/Profil/MyOtzif'
 import Pictures from './components/Profil/Pictures'
 import Edit from './components/Profil/Edit'
 import { Header } from "./components/Header/Header";
+import MainCenter from "../src/components/LearingCenterRegisterPage/MainCenter"
 import { Context } from "./Context/Context";
+import LearingCenterChat from "./components/LearingCenterRegisterPage/LearingCenterChat"
+import LearingBlance from './components/LearingCenterRegisterPage/LearingBlance'
+import LearingTeacher from './components/LearingCenterRegisterPage/LearingTeacher'
+
 
 export function App() {
 
@@ -72,7 +78,6 @@ export function App() {
           <Route path="/NewsMain" element={<NewsMain />} ></Route>
           <Route path="/OneNews" element={<OneNews />} ></Route>
           <Route path="/Comment" element={<CommentMain />} ></Route>
-
           {/* profil  */}
           <Route path="/MainProfil" element={<PutProfil />}  ></Route>
           <Route path="/Chat" element={<Chat />} ></Route>
@@ -82,6 +87,11 @@ export function App() {
           <Route path="/MyOtzif" element={<MyOtzif />} > </Route>
           <Route path="/Pictures" element={<Pictures />} ></Route>
           <Route path="/Edit" element={<Edit />} ></Route>
+          {/* LearingCenterChat */}
+          <Route path="/MainCenter" element={<MainCenter />} ></Route>
+          <Route path="/LearingCenterChat" element={<LearingCenterChat />} ></Route>
+          <Route path="/LearingBlance" element={<LearingBlance />} >  </Route>
+          <Route path="/LearingTeacher" element={<LearingTeacher />} ></Route>
 
           {/* Room  */}
           <Route path="/CenterRoom" element={<CenterRoom />} > </Route>

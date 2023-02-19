@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import ItTexnology from './Allsection-items/DISCIPLINES'
 import FooterSearch from './FooterSearch'
 import Students from './HomeComment'
 import Footer from "./Footer"
 import FillterSAidbar from './FillterSAidbar'
+import { Context } from '../../Context/Context'
 
 export default function FillterLearingCenter() {
 
@@ -15,6 +16,7 @@ export default function FillterLearingCenter() {
     const CloseFillter = () => {
         setSaidbarFillter(false)
     }
+    const { dark, setDark } = useContext(Context)
 
 
     return (
@@ -22,7 +24,7 @@ export default function FillterLearingCenter() {
             <div className='fillter'>
                 <div className="item-fillter">
                     <div className="title-fillter title">
-                        <h3>
+                        <h3 style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                             Поиск преподавателей и учебных центров
                         </h3>
                     </div>

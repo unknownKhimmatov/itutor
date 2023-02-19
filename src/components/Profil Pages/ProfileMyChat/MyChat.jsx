@@ -17,8 +17,7 @@ export const MyChat = () => {
       <Header />
       <main className="my-chat-main">
         <div className="my-chat-container">
-          <section className="my-chat-section">
-            <h4 className="profile-page-title">Личный кабинет</h4>
+          <section className="profile-menu-section">
             <div className="profile-menu-div">
               <ul>
                 <NavLink to={"/profile"} style={{ textDecoration: "none" }}>

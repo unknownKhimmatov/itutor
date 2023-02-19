@@ -99,11 +99,11 @@
 
 .profile-edits-container {
   width: 900px;
-  height: 3700px;
+  height: auto;
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  /* border: 1px solid aqua; */
+  margin-bottom: 50px;
 }
 
 .profile-fname-lname-edit {

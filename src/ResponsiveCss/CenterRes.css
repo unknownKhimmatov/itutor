@@ -1,0 +1,51 @@
+@media only screen and (max-width: 1004px) {
+    .learingcenterregister {
+        width: 95%;
+    }
+
+    .learingcenterregister span label {
+        font-size: 1rem;
+    }
+
+    .filesertificate {
+        width: 30%;
+        height: 200px;
+        font-size: .6rem;
+    }
+
+    .main-information-in-center {
+        display: grid;
+        grid-template-columns: 48% 48%;
+    }
+    .lessons-and-price {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 48% 48%;
+    }
+
+    .imgs-edit-center {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    .imgs-edit-center img {
+        width: 48%;
+    }
+
+    .vd-edit {
+        width: 100%;
+    }
+
+    .vd-edit div {
+        width: 100%;
+    }
+
+    .vd-edit div img {
+        width: 99%;
+    }
+
+    
+}
+
+@media only screen and (max-width:560px) {}

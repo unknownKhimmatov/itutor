@@ -13,7 +13,7 @@ export const ProfilPage = () => {
       <main className="profil-page-main">
         <div className="profile-page-container">
           <section className="profile-menu-section">
-            <h4 className="profile-page-title">Личный кабинет</h4>
+
             <div className="profile-menu-div">
               <ul>
                 <li style={{ color: "#593E69" }}>Личные данные</li>
@@ -45,6 +45,7 @@ export const ProfilPage = () => {
               </ul>
             </div>
           </section>
+
           <section className="profile-edit-section">
             <div className="profile-avatar-div">
               <img src={ProfileAvatar} alt="#" />
