@@ -63,8 +63,54 @@ export default function Profil() {
                             </NavLink>
                         </ul>
                     </div>
+
                     <div className="main-profil">
                         <div className="transaksiya-main">
+                            <div className="title-transaksiya">
+                                <h3>
+                                    Транзакции
+                                </h3>
+                            </div>
+
+                            <div className="transactions-main-container">
+                                <div className="left-transaksiya">
+                                    <span>
+                                        ID
+                                    </span>
+                                    <span>
+                                        Услуга
+                                    </span>
+                                </div>
+                                <div className="right-transaksiya">
+                                    <span>
+                                        Дата
+                                    </span>
+                                    <span>
+                                        Статус
+                                    </span>
+                                </div>
+                            </div>
+                            <div className="transactions-main-container" id='bgcnone'>
+                                <div className="left-transaksiya">
+                                    <span>
+                                        123
+                                    </span>
+                                    <span>
+                                        Текст услуги
+                                    </span>
+                                </div>
+                                <div className="right-transaksiya">
+                                    <span>
+                                        20.11.2022
+                                    </span>
+                                    <span>
+                                        Оплачено
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="transaksiya-main-res">
                             <div className="title-transaksiya">
                                 <h3>
                                     Транзакции

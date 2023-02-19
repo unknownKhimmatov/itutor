@@ -72,6 +72,7 @@ export default function Profil() {
                                 </h3>
                             </div>
                             <div className="otzif-cards">
+
                                 <div className="otzif-card"  >
                                     <div className="top-otzif">
                                         <p>
@@ -184,6 +185,7 @@ export default function Profil() {
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
 

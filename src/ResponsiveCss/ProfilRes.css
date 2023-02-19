@@ -86,12 +86,12 @@
 
     .saidbar-profil:hover {
         left: 0;
-        transition: .5s;
+        transition: .3s;
     }
 
     .saidbar-profil:hover ul {
         box-shadow: 0px 0px 20px 200px rgba(0, 0, 0, 0.7);
-        transition: .4s;
+        transition: .3s;
     }
 
     .saidbar-profil ul {
@@ -291,13 +291,59 @@
 
 
     /* platniye-servises-main-container */
-    .platniye-servises-main-container {
+
+    .servises-card {
+        position: relative;
+        height: auto;
+
+    }
+
+    .top-cards-servises p {
+        font-size: .9rem;
+    }
+
+    .servises-card .top-cards-servises button {
+        bottom: 10px;
+        height: 35px;
+        margin-top: 10000px;
+    }
+
+    .myotzif-main {
         width: 100%;
         border: 1px solid black;
+        position: relative;
         padding: 0;
     }
 
+    .otzif-cards {
+        width: 100%;
+        margin: 0;
+        border: 1px solid black;
+    }
+
+    /* transaksiya  */
+
+    .transaksiya-main {
+        display: none;
+    }
+
+    .transaksiya-main-res {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    /* .pictures */
 
 
-   
+    .pictures {
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    .cards-pictures {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
 }

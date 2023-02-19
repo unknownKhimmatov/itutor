@@ -121,22 +121,26 @@
     }
 
 
-    .footer-main {
+
+    .footer-main-res {
         width: 100%;
         height: auto;
-        background-color: #fff;
     }
 
-    .footer-main footer {
+    .footer-main-res footer {
         position: relative;
         width: 100%;
         display: grid;
         padding: 20px 0px;
         align-items: start;
-        gap: 0;
+        row-gap: 10px;
         padding-left: 20px;
         justify-content: center;
-        grid-template-columns: 50%;
+        grid-template-columns: 40% 40%;
+    }
+
+    .footer-social-media {
+        gap: 10px;
     }
 
     .footer-img {
