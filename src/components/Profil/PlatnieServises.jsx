@@ -35,7 +35,7 @@ export default function Profil() {
                                 </li>
                             </NavLink>
                             <NavLink to='/PlatnieServises' >
-                                <li style={{color:"#000"}} >
+                                <li style={{ color: "#000" }} >
                                     Платные услуги
                                 </li>
                             </NavLink>

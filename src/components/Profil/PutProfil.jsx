@@ -57,7 +57,7 @@ export default function Profil() {
                                 </li>
                             </NavLink>
                             <NavLink to='/MainProfil'>
-                                <li style={{color:"#000"}}>
+                                <li style={{ color: "#000" }}>
                                     Выход
                                 </li>
                             </NavLink>

@@ -15,14 +15,13 @@ export default function Profil() {
 
 
 
-
     return (
 
         <>
             <Header />
             <div className='profil'>
                 <div className="item-profil">
-                    <div className="saidbar-profil">
+                    <div className="saidbar-profil" >
                         <ul>
                             <NavLink to='/Edit' >
                                 <li >
@@ -67,6 +66,8 @@ export default function Profil() {
                             </NavLink>
                         </ul>
                     </div>
+
+
                     <div className="main-profil">
                         <Carousel />
                         <div className="chat-pole">

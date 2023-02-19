@@ -15,6 +15,7 @@ export default function Profil() {
 
 
 
+
     return (
 
         <>
@@ -22,6 +23,7 @@ export default function Profil() {
             <div className='profil'>
                 <div className="item-profil">
                     <div className="saidbar-profil">
+
                         <ul>
                             <NavLink to='/Edit' >
                                 <li style={{ color: "#000" }}>
