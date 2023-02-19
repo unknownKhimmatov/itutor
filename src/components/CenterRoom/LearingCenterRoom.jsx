@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from '../../Context/Context'
 import { Header } from '../Header/Header'
 import Footer from '../home/Footer'
 import FooterSearch from '../home/FooterSearch'
@@ -7,7 +8,12 @@ import OurServisesDesc from '../Room/OurServisesDesc'
 import SubjectsAndTuitionFees from '../Room/SubjectsAndTuitionFees'
 import Carousel from './Carousel'
 
+
+
 export default function LearingCenterRoom() {
+
+    const { dark, setDark } = useContext(Context)
+
     return (
         <>
             <Header />
@@ -44,18 +50,18 @@ export default function LearingCenterRoom() {
                         {/* top room  */}
                         <div className="top-room-information">
                             <div className="roomava">
-                                <img src="./images/room/uchblogo.png" alt="" />
+                                <img className='roomavaimg' src="./images/room/uchblogo.png" alt="" />
                             </div>
 
                             <div className="desc-information-room">
                                 <div className="name-and-rating-room">
-                                    <h3>
+                                    <h3 style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                                         Учебный центр
                                     </h3>
                                     <div className="rating-room">
-                                        <span> <i class='bx bxs-star star' ></i> 5.0 </span>
-                                        <span><i class='bx bx-user'></i>178 оценок</span>
-                                        <span className='pur'> <i class='bx bx-purchase-tag-alt purchase_rotate_room'></i> от <o>15 $</o> </span>
+                                        <span style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}> <i class='bx bxs-star star' ></i> 5.0 </span>
+                                        <span style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}><i class='bx bx-user'></i>178 оценок</span>
+                                        <span style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }} className='pur'> <i class='bx bx-purchase-tag-alt purchase_rotate_room'></i> от <o>15 $</o> </span>
                                     </div>
                                 </div>
                                 <div className="buttons-room">
@@ -83,7 +89,7 @@ export default function LearingCenterRoom() {
                             <div className="experience">
                                 <div className="item-experience">
                                     <div className="title-experience">
-                                        <h3>
+                                        <h3 style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                                             Документы
                                         </h3>
                                     </div>
@@ -102,7 +108,7 @@ export default function LearingCenterRoom() {
                         <div className="photo-galery">
                             <div className="item-galery">
                                 <div className="title-galery">
-                                    <h3>
+                                    <h3 style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                                         Фотогалерея
                                     </h3>
                                 </div>
@@ -125,7 +131,7 @@ export default function LearingCenterRoom() {
                         <div className="video">
                             <div className="item-video">
                                 <div className="title-video">
-                                    <h3>
+                                    <h3 style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                                         Видеобзор
                                     </h3>
                                 </div>

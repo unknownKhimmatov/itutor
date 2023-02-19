@@ -25,6 +25,9 @@ import "./ResponsiveCss/FillterRes.css"
 import "./ResponsiveCss/TeacherAndHomeComments.css"
 import "./ResponsiveCss/ProfilRes.css"
 import "./ResponsiveCss/CenterRes.css"
+import "./ResponsiveCss/RoomRes.css"
+import "./ResponsiveCss/ProviteRoomRes.css"
+
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ProfilPage } from "./components/Profil Pages/Profil/ProfilPage";
@@ -57,6 +60,7 @@ import LearingPlatnie from './components/LearingCenterRegisterPage/LearingPlatni
 import LearingTransaksiya from './components/LearingCenterRegisterPage/LearingTrasatsiya'
 import LearingOtviz from './components/LearingCenterRegisterPage/LearingOtviz'
 import LearingEdit from './components/LearingCenterRegisterPage/LearingEdit'
+import ProviteRoom from './components/ProviteRoom/PrivoteRoom'
 
 export function App() {
 
@@ -80,6 +84,7 @@ export function App() {
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/NewsMain" element={<NewsMain />} ></Route>
           <Route path="/OneNews" element={<OneNews />} ></Route>
+          <Route path="/Header" element={<Header />} ></Route>
           <Route path="/Comment" element={<CommentMain />} ></Route>
           {/* profil  */}
           <Route path="/MainProfil" element={<PutProfil />}  ></Route>
@@ -102,7 +107,8 @@ export function App() {
 
           {/* Room  */}
           <Route path="/CenterRoom" element={<CenterRoom />} > </Route>
-          <Route path="/Header" element={<Header />} ></Route>
+          <Route path="/ProviteRoom" element={<ProviteRoom />} ></Route>
+
         </Routes>
       </div>
     </BrowserRouter>

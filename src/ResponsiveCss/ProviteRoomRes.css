@@ -1,0 +1,14 @@
+@media only screen and (max-width: 1004px) {
+    .week-table {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .border-container-table {
+        width: 140%;
+    }
+}
+
+@media only screen and (max-width:560px) {
+    
+}

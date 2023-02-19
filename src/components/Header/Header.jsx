@@ -1,9 +1,5 @@
 import React, { useContext, useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import {
-  Route, Routes
-} from 'react-router-dom'
-import App from '../../App'
 import { Context } from '../../Context/Context'
 
 export const Header = () => {
@@ -65,7 +61,7 @@ export const Header = () => {
               <span>1</span>
             </div>
             <div className="provite-room-container" style={{ backgroundColor: dark !== true ? "#F8EED9" : "#776083" }}>
-              <NavLink to='/MainCenter'>
+              <NavLink to='/ProviteRoom'>
                 <span style={{ color: dark !== true ? "gold" : "white" }} >
                   Личный кабинет
                 </span>
@@ -115,7 +111,7 @@ export const Header = () => {
                 <span>1</span>
               </div>
               <div className="provite-room-container-res">
-                <NavLink to='/MainCenter'>
+                <NavLink to='/CenterRoom'>
                   <span >
                     Личный кабинет
                   </span>
