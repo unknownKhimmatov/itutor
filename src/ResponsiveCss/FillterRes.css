@@ -137,12 +137,21 @@
         margin-top: 0;
         background-color: #fff;
         height: 100%;
+        top: 0;
+        overflow-x: scroll;
         position: relative;
         border-top: 1px solid rgb(200, 0, 0);
     }
 
     .bottom-saidbar-location {
         display: none;
+    }
+    .saidbar-bottom-search{
+        width: 100%;
+        
+    }
+    .saidbar-bottom-search button{
+        height: 50px;
     }
 
 

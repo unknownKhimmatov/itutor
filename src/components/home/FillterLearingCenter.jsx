@@ -260,7 +260,7 @@ export default function FillterLearingCenter() {
                                 </div>
 
                                 <div className="saidbar-bottom-search">
-                                    <button>Найти <i class='bx bx-search'></i> </button>
+                                    <button onClick={CloseFillter}>Найти <i class='bx bx-search'></i> </button>
                                 </div>
 
                             </div>

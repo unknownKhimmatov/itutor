@@ -135,13 +135,17 @@
     }
 
     .saidbar-profil ul li {
-        font-size: .6rem;
+        font-size: 1rem;
     }
 
     .main-profil {
         width: 100%;
         padding: 20px;
         height: auto;
+    }
+
+    .edit {
+        margin-bottom: 0px;
     }
 
     .top-edit {
@@ -318,15 +322,27 @@
 
 
     /* platniye-servises-main-container */
+    .main-profil .platniye-servises-main-container {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+    }
 
-    .servises-card {
+    .main-servises-cards .servises-card {
         position: relative;
+        width: 100%;
+        margin: 0;
         height: auto;
 
     }
 
+    .title-platiye-servises {
+        padding-left: 20px;
+    }
+
+
     .top-cards-servises p {
-        font-size: .9rem;
+        font-size: .7rem;
     }
 
     .servises-card .top-cards-servises button {
@@ -335,74 +351,61 @@
         margin-top: 10000px;
     }
 
-    .myotzif-main {
+
+    /* myotzif-main */
+    .main-profil .myotzif-main {
         width: 100%;
-        border: 1px solid black;
-        position: relative;
+        padding: 10px 7px;
+    }
+
+    .title-otzif {
+        width: 100%;
+    }
+
+    .title-otzif h3 {
+        font-size: 1.1rem;
+    }
+
+
+    .myotzif-main .otzif-cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
         padding: 0;
+        /* border: 1px solid black; */
     }
 
-    .otzif-cards {
-        width: 100%;
-        margin: 0;
-        border: 1px solid black;
-    }
 
-    /* transaksiya  */
 
 
     /* .transactions-main-container */
-    .transaksiya-main {
+    .main-profil .transaksiya-main {
         width: 100%;
-        background-color: #fff;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 0px 40px;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
     }
 
-
-    #bgcnone {
-        background-color: #fff;
+    .transaksiya-main .title-transaksiya h3 {
+        padding-left: 10px;
+        font-size: 1.4rem;
     }
 
-    .title-transaksiya {
+    .transaksiya-main .transactions-main-container {
         width: 100%;
-        height: 100px;
-        display: flex;
-        align-items: center;
+        margin: 0;
+        height: 70px;
+        padding: 0px 20px;
     }
 
-    .title-transaksiya h3 {
-        font-size: 1rem;
-        font-weight: 400;
-        color: #593E69;
-    }
+    .transaksiya-main .transactions-main-container div span {
+        font-size: .6rem;
 
-    .transactions-main-container {
-        width: 100%;
-        background-color: #F6F6F6;
-        height: 100px;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
-
-    .transactions-main-container div {
-        width: 40%;
-        display: flex;
-        font-size: 1.3rem;
-        color: #593E69;
-        justify-content: space-between;
-    }
-
 
     /* .pictures */
     .pictures {
         width: 100%;
-        border: 1px solid black;
     }
 
     .cards-pictures {
