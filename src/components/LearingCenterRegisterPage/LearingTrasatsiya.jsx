@@ -2,12 +2,12 @@ import React from 'react'
 import Footer from '../home/Footer'
 import { Header } from '../Header/Header'
 import { NavLink } from 'react-router-dom'
-
-import SystemUzCard from "../../../src/Images/system-uz-card.svg";
-import SystemHumo from "../../../src/Images/system-humo.svg";
-import SystemVisa from "../../../src/Images/system-visa.svg";
+import { useState } from 'react'
 
 export default function Profil() {
+    const [isModal, setIsModal] = useState(false)
+
+
 
 
 
@@ -17,10 +17,10 @@ export default function Profil() {
             <Header />
             <div className='profil'>
                 <div className="item-profil">
-                    <div className="saidbar-profil ">
+                    <div className="saidbar-profil">
                         <ul>
                             <NavLink to='/MainCenter' >
-                                <li  >
+                                <li >
                                     Личные данные
                                 </li>
                             </NavLink>
@@ -36,17 +36,17 @@ export default function Profil() {
                                 </li>
                             </NavLink>
                             <NavLink to='/LearingBlance'>
-                                <li style={{ color: "#000" }} >
+                                <li>
                                     Баланс
                                 </li>
                             </NavLink>
                             <NavLink to='/LearingPlatnie' >
-                                <li>
+                                <li >
                                     Платные услуги
                                 </li>
                             </NavLink>
                             <NavLink to='/LearingTransaksiya'>
-                                <li>
+                                <li style={{ color: "#000" }}>
                                     Транзакции
                                 </li>
                             </NavLink>
@@ -55,67 +55,63 @@ export default function Profil() {
                                     Мои отзывы
                                 </li>
                             </NavLink>
-                            <NavLink to='/LearingOtviz'>
+                            <NavLink to='/LearingEdit'>
                                 <li>
                                     Выход
                                 </li>
                             </NavLink>
                         </ul>
                     </div>
+
                     <div className="main-profil">
-                        <div className="balance-container-main">
-                            <div className="top-balance">
+                        <div className="transaksiya-main">
+                            <div className="title-transaksiya">
                                 <h3>
-                                    Баланс
+                                    Транзакции
                                 </h3>
-                                <p>
-                                    На счету: 30.000 сум
-                                </p>
                             </div>
 
-
-                            <div className="middle-balance">
-                                <div className="title-middle-balance">
-                                    <h3>
-                                        Способы пополнения:
-                                    </h3>
+                            <div className="transactions-main-container">
+                                <div className="left-transaksiya">
+                                    <span>
+                                        ID
+                                    </span>
+                                    <span>
+                                        Услуга
+                                    </span>
                                 </div>
-                                <div className="card-busness">
-                                    <img src={SystemUzCard} alt="" />
-                                    <img src={SystemHumo} alt="" />
-                                    <img src={SystemVisa} alt="" />
-                                </div>
-                            </div>
-
-
-                            <div className="bottom-balance">
-                                <div className="title-bottom-balance">
-                                    <h3>
-                                        Данные:
-                                    </h3>
-                                </div>
-                                <div className="information-buisness-card">
-                                    <div className="left-numbercard">
-                                        <label htmlFor="cardnumber">Номер карты</label>
-                                        <input type="text" id='cardnumber' />
-                                    </div>
-                                    <div className="right-numbercard">
-                                        <label htmlFor="cardnumber">Номер карты</label>
-                                        <input type="text" id='cardnumber' />
-                                    </div>
+                                <div className="right-transaksiya">
+                                    <span>
+                                        Дата
+                                    </span>
+                                    <span>
+                                        Статус
+                                    </span>
                                 </div>
                             </div>
-                            <div className="bottom-button-balance">
-                                <button>Пополнить</button>
+                            <div className="transactions-main-container" id='bgcnone'>
+                                <div className="left-transaksiya">
+                                    <span>
+                                        123
+                                    </span>
+                                    <span>
+                                        Текст услуги
+                                    </span>
+                                </div>
+                                <div className="right-transaksiya">
+                                    <span>
+                                        20.11.2022
+                                    </span>
+                                    <span>
+                                        Оплачено
+                                    </span>
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
             <Footer />
-
-
         </>
     )
 }

@@ -1,12 +1,16 @@
 
 
-import React from 'react'
+import React, { useContext } from 'react'
 import Footer from '../home/Footer'
 import { Header } from '../Header/Header'
 import { NavLink } from 'react-router-dom'
 import TeacherList from './TeacherList'
+import { Context } from '../../Context/Context'
 
 export default function LearingTeacher() {
+
+    const { dark, setDark } = useContext(Context)
+
     return (
         <>
             <Header />
@@ -35,27 +39,22 @@ export default function LearingTeacher() {
                                     Баланс
                                 </li>
                             </NavLink>
-                            <NavLink to='/PlatnieServises' >
+                            <NavLink to='/LearingPlatnie' >
                                 <li>
                                     Платные услуги
                                 </li>
                             </NavLink>
-                            <NavLink to='/transanksiya'>
+                            <NavLink to='/LearingTransaksiya'>
                                 <li>
                                     Транзакции
                                 </li>
                             </NavLink>
-                            <NavLink to='/MyOtzif'>
+                            <NavLink to='/LearingOtviz'>
                                 <li>
                                     Мои отзывы
                                 </li>
                             </NavLink>
-                            <NavLink to='/Pictures'>
-                                <li>
-                                    Избранные
-                                </li>
-                            </NavLink>
-                            <NavLink to='/MainProfil'>
+                            <NavLink to='/LearingEdit'>
                                 <li>
                                     Выход
                                 </li>
@@ -75,7 +74,7 @@ export default function LearingTeacher() {
 
                             <div className="zayafka">
                                 <div className="title-zayafka">
-                                    <h3>
+                                    <h3 style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>
                                         Заявки на вступление
                                     </h3>
                                 </div>

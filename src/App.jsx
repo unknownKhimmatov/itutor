@@ -14,7 +14,7 @@ import "./components/Profil Pages/Css/BalanceStyle.css"
 import "./components/css/Room.css"
 import "./components/css/LearingCenterRegister.css"
 import "./components/css/Pictures.css"
-
+import "./components/css/Reviev.css"
 
 // responsive css 
 import "./ResponsiveCss/HomeRes.css"
@@ -53,7 +53,10 @@ import { Context } from "./Context/Context";
 import LearingCenterChat from "./components/LearingCenterRegisterPage/LearingCenterChat"
 import LearingBlance from './components/LearingCenterRegisterPage/LearingBlance'
 import LearingTeacher from './components/LearingCenterRegisterPage/LearingTeacher'
-
+import LearingPlatnie from './components/LearingCenterRegisterPage/LearingPlatnie'
+import LearingTransaksiya from './components/LearingCenterRegisterPage/LearingTrasatsiya'
+import LearingOtviz from './components/LearingCenterRegisterPage/LearingOtviz'
+import LearingEdit from './components/LearingCenterRegisterPage/LearingEdit'
 
 export function App() {
 
@@ -92,6 +95,10 @@ export function App() {
           <Route path="/LearingCenterChat" element={<LearingCenterChat />} ></Route>
           <Route path="/LearingBlance" element={<LearingBlance />} >  </Route>
           <Route path="/LearingTeacher" element={<LearingTeacher />} ></Route>
+          <Route path="/LearingPlatnie" element={<LearingPlatnie />}> </Route>
+          <Route path="/LearingTransaksiya" element={<LearingTransaksiya />} > </Route>
+          <Route path="/LearingOtviz" element={<LearingOtviz />} ></Route>
+          <Route path="/LearingEdit" element={<LearingEdit />}  >  </Route>
 
           {/* Room  */}
           <Route path="/CenterRoom" element={<CenterRoom />} > </Route>

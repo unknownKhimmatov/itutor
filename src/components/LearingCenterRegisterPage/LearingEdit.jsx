@@ -24,7 +24,7 @@ export default function Profil() {
 
                         <ul>
                             <NavLink to='/MainCenter' >
-                                <li style={{ color: "#000" }}>
+                                <li >
                                     Личные данные
                                 </li>
                             </NavLink>
@@ -39,7 +39,7 @@ export default function Profil() {
                                     Преподаватели
                                 </li>
                             </NavLink>
-                            <NavLink to='/LearingBlance'>
+                            <NavLink to='/LearingBalance'>
                                 <li>
                                     Баланс
                                 </li>
@@ -60,7 +60,7 @@ export default function Profil() {
                                 </li>
                             </NavLink>
                             <NavLink to='/LearingEdit'>
-                                <li>
+                                <li style={{ color: "#000" }}>
                                     Выход
                                 </li>
                             </NavLink>
@@ -85,7 +85,7 @@ export default function Profil() {
                                     <input type="text" id='Наименование' placeholder='Наименование' />
                                 </span>
                                 <span>
-                                    <label htmlFor="phone"style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>Номер телефона</label>
+                                    <label htmlFor="phone" style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}>Номер телефона</label>
                                     <input type="tel" id='phone' placeholder='+998 99 999 99 99' />
                                 </span>
                                 <span>
@@ -180,7 +180,7 @@ export default function Profil() {
                                 </span>
                             </div>
                             <div className="learingcenterbutton">
-                                <button >Сохранить</button>
+                                <button >Изменить</button>
                             </div>
                         </div>
                     </section>
