@@ -15,6 +15,7 @@ import "./components/css/Room.css"
 import "./components/css/LearingCenterRegister.css"
 import "./components/css/Pictures.css"
 import "./components/css/Reviev.css"
+import "../src/components/css/Registratsiya.css"
 
 // responsive css 
 import "./ResponsiveCss/HomeRes.css"
@@ -27,7 +28,17 @@ import "./ResponsiveCss/ProfilRes.css"
 import "./ResponsiveCss/CenterRes.css"
 import "./ResponsiveCss/RoomRes.css"
 import "./ResponsiveCss/ProviteRoomRes.css"
+import "./ResponsiveCss/RegisterREs.css"
 
+
+// register pages
+import Passwordrecovery from "./components/Registratsiya/passwordrecovery";
+import Permission from "./components/Registratsiya/permission"
+import ChoseType from './components/Registratsiya/choosethetype'
+import RegisterUchb from './components/Registratsiya/resgistratsiyauchb'
+import RegisterTeach from './components/Registratsiya/registratsiyateach'
+import RegisterStud from './components/Registratsiya/registratsiyastud'
+import ConfrimCode from './components/Registratsiya/confirmationcode'
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ProfilPage } from "./components/Profil Pages/Profil/ProfilPage";
@@ -51,8 +62,9 @@ import MyOtzif from './components/Profil/MyOtzif'
 import Pictures from './components/Profil/Pictures'
 import Edit from './components/Profil/Edit'
 import { Header } from "./components/Header/Header";
-import MainCenter from "../src/components/LearingCenterRegisterPage/MainCenter"
 import { Context } from "./Context/Context";
+
+import MainCenter from "../src/components/LearingCenterRegisterPage/MainCenter"
 import LearingCenterChat from "./components/LearingCenterRegisterPage/LearingCenterChat"
 import LearingBlance from './components/LearingCenterRegisterPage/LearingBlance'
 import LearingTeacher from './components/LearingCenterRegisterPage/LearingTeacher'
@@ -108,7 +120,15 @@ export function App() {
           {/* Room  */}
           <Route path="/CenterRoom" element={<CenterRoom />} > </Route>
           <Route path="/ProviteRoom" element={<ProviteRoom />} ></Route>
+          <Route path="/RegisterUchb" element={<RegisterUchb />}>  </Route>
+          <Route path="/RegisterStud" element={<RegisterStud />}>  </Route>
+          <Route path="/RegisterTeach" element={<RegisterTeach />}>  </Route>
+          <Route path="/ConfrimCode" element={<ConfrimCode />} ></Route>
 
+          {/* register pages  */}
+          <Route path="/Passwordrecovery" element={<Passwordrecovery />} ></Route>
+          <Route path="/Permission" element={<Permission />} >  </Route>
+          <Route path="/ChoseType" element={<ChoseType />} ></Route>
         </Routes>
       </div>
     </BrowserRouter>

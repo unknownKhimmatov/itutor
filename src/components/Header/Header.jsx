@@ -61,7 +61,7 @@ export const Header = () => {
               <span>1</span>
             </div>
             <div className="provite-room-container" style={{ backgroundColor: dark !== true ? "#F8EED9" : "#776083" }}>
-              <NavLink to='/ProviteRoom'>
+              <NavLink to='/MainCenter'>
                 <span style={{ color: dark !== true ? "gold" : "white" }} >
                   Личный кабинет
                 </span>
@@ -71,6 +71,8 @@ export const Header = () => {
         </header>
         <i class="fa-solid fa-bars hamurger" onClick={() => setNavShow((prev) => !prev)} style={{ color: dark !== true ? "#593E69" : "#F9F9F9" }}  ></i>
       </div>
+
+      
 
       <div className="reaponsive-header" id='block' style={{ display: navshow ? "flex" : "none", }}>
         <header  >
@@ -111,7 +113,7 @@ export const Header = () => {
                 <span>1</span>
               </div>
               <div className="provite-room-container-res">
-                <NavLink to='/CenterRoom'>
+                <NavLink to='/MainCenter'>
                   <span >
                     Личный кабинет
                   </span>
