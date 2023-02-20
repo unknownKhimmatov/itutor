@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Footer from '../home/Footer'
 import { Header } from '../Header/Header'
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
 import Modal1 from './Modal1'
+import { Context } from '../../Context/Context'
 
 export default function Profil() {
     const [isModal, setIsModal] = useState(false)
 
 
-
+    const { dark, setDark } = useContext(Context)
 
 
     return (
@@ -75,46 +76,46 @@ export default function Profil() {
                                 <div className="item-middle-edit">
                                     <div className="name_surname">
                                         <span>
-                                            <label htmlFor="name"> Имя</label><br />
+                                            <label htmlFor="name" style={{ color: dark ? "#fff" : "#000" }}> Имя</label><br />
                                             <input type="text" name="" id="name" placeholder='Рафаэль' />
                                         </span>
                                         <span>
-                                            <label htmlFor="surname">Фамилия</label><br />
+                                            <label htmlFor="surname" style={{ color: dark ? "#fff" : "#000" }}>Фамилия</label><br />
                                             <input type="text" id='surname' placeholder='Ройтман' />
                                         </span>
                                     </div>
                                     <div className="phone_email">
                                         <span>
-                                            <label htmlFor="phone">Номер телефона</label><br />
+                                            <label htmlFor="phone" style={{ color: dark ? "#fff" : "#000" }}>Номер телефона</label><br />
                                             <input type="number" id='phone' placeholder='+998 93 565 32 45' />
                                         </span>
                                         <span>
-                                            <label htmlFor="email">Email</label><br />
+                                            <label htmlFor="email" style={{ color: dark ? "#fff" : "#000" }}>Email</label><br />
                                             <input type="email" id='email' placeholder='rafaelroytman@gmail.com' />
                                         </span>
                                     </div>
                                     <div className="coutr_city">
                                         <span>
-                                            <label htmlFor="country">Страна</label><br />
+                                            <label htmlFor="country" style={{ color: dark ? "#fff" : "#000" }}>Страна</label><br />
                                             <input type="text" id='country' placeholder='Узбекистан' />
                                         </span>
                                         <span>
-                                            <label htmlFor="city">Регион</label><br />
+                                            <label htmlFor="city" style={{ color: dark ? "#fff" : "#000" }}> Регион</label><br />
                                             <input type="text" id='city' placeholder='Ташкент' />
                                         </span>
                                     </div>
                                     <div className="password">
                                         <span>
-                                            <label htmlFor="password">Пароль</label><br />
+                                            <label htmlFor="password" style={{ color: dark ? "#fff" : "#000" }}>Пароль</label><br />
                                             <input type="text" id='password' />
                                         </span>
                                         <span>
-                                            <label htmlFor="password2">Подтвердите пароль</label><br />
+                                            <label htmlFor="password2" style={{ color: dark ? "#fff" : "#000" }}>Подтвердите пароль</label><br />
                                             <input type="text" id='password2' />
                                         </span>
                                     </div>
                                     <div className="bottom-button-edit">
-                                        <button onClick={() => setIsModal((prev) => !prev)} >Сохранить</button>
+                                        <button style={{ color: dark ? "#fff" : "#000" }} onClick={() => setIsModal((prev) => !prev)} >Сохранить</button>
                                     </div>
                                 </div>
                             </div>

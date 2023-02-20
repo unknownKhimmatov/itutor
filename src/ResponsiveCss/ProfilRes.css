@@ -51,7 +51,7 @@
     .edit {
         width: 100%;
         margin-left: -20px;
-        height: 140vh;
+        margin-bottom: 0px;
     }
 
     .middle-edit {
@@ -145,8 +145,8 @@
     }
 
     .edit {
-        margin-bottom: 0px;
-    }
+        height: auto;
+        margin-bottom: 400px;    }
 
     .top-edit {
         width: 100%;

@@ -10,7 +10,7 @@
 }
 
 .profil-img-center {
-    max-width: 20%;
+    width: 20%;
     height: auto;
     position: relative;
 }
@@ -73,11 +73,11 @@
     margin-top: 20px;
 }
 
-.learingcenter-information-middle-box .learinginformation-txt {
+.learinginformation-txt {
     width: 100%;
 }
 
-.learingcenter-information-middle-box .learinginformation-txt .aboutcenter {
+.learinginformation-txt .aboutcenter {
     width: 82%;
     display: flex;
     flex-direction: column;
@@ -106,11 +106,7 @@
     flex-direction: column;
 }
 
-.lessons-and-price {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 47% 47%;
-}
+
 
 .lessons-and-price {
     width: 100%;

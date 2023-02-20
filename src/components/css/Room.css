@@ -551,14 +551,13 @@
 
 .galery {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: start;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 10px;
 }
 
 .galery img {
-    width: 32.2%;
+    width: 100%;
 }
 
 .video {
