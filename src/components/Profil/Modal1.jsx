@@ -5,7 +5,7 @@ export default function Modal1({ isModal, setIsModal }) {
 
     setInterval(() => {
         setTime(time - 1)
-    }, 1500);
+    }, 1000);
 
     const RemovaModal = () => {
         setIsModal(false)

@@ -9,7 +9,6 @@ export default function Main() {
     <div className="main">
       {/* header-main  */}
       <Header />
-
       {/* all components */}
       <Routes>
         <Route path="/" element={<Home />} />
